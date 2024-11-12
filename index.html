@@ -7,14 +7,17 @@
     <title>Calende</title>
 </head>
 <header class="bg-white">
-  <nav class="mx-auto flex max-2xl:max-w-7xl items-center justify-between p-6 md:px-8 md:grid md:grid-cols-3 2xl:mx-36" aria-label="Global">
-    <div class="col-start-1">
-      <a href="#" class="font-mono text-2xl text-white bg-red-500 border border-red-500 rounded-md py-1 px-2.5">CALENDE</a>
+  <nav class="mx-auto max-2xl:max-w-7xl p-6 md:px-8 grid grid-cols-3 2xl:mx-36 " aria-label="Global">
+    <div class="col-start-2 max-md:justify-self-center md:col-start-1 max-md:flex items-center justify-center">
+      <a href="#">
+        <span class="sr-only">Your Company</span>
+        <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=red&shade=600" alt="">
+      </a>
     </div>
-    <div class="flex md:hidden">
-      <button id="btnOpenOffcanvas" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+    <div class="flex md:hidden col-start-3 justify-self-end h-max ">
+      <button id="btnOpenOffcanvas" type="button" class="inline-flex items-center justify-center rounded-md text-red-500 border-2 border-transparent focus:border-b-2 focus:border-red-500 hover:border-2 hover:border-gray-200 transition duration-300">
         <span class="sr-only">Open main menu</span>
-        <svg class="h-6 w-6 stroke-red-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
@@ -31,9 +34,9 @@
       <div class="flex items-center justify-between">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=red&shade=600" alt="">
         </a>
-        <button  id="close-btn"  type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+        <button  id="close-btn"  type="button" class="rounded-md text-red-500 border-2 border-transparent focus:border-b-2 focus:border-red-500 hover:border-2 hover:border-gray-200 transition duration-300">
           <span class="sr-only">Close menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -50,6 +53,17 @@
 </header>
 
 <body class="bg-white">
+  <div class="grid">
+    <div class="grid columns-2 bg-red-300 w-3/4 sm:h-max justify-self-center rounded-md items-center">
+        <div class="m-5 p-3 bg-gray-500 bg-opacity-40 rounded-md h-max md:h-3/4 flex items-center">
+          <p class="font-semibold text-gray-900">Lorem ipsum dolor sit amet, ultricies hendrerit quam. Morbi justo neque, aliquam id lacus nec, laoreet interdum massa. Proin cursus augue non tortor porta posuere. Vivamus condimentum ac quam consequat placerat. Phasellus ipsum nisi, blandit vitae sollicitudin ac, pretium at diam</p>
+        </div>
+        <div class="col-start-2 justify-self-end m-5">
+          <img class="rounded-md md:h-3/4" src="https://picsum.photos/seed/picsum/400/500" alt="lorem ipsum">
+        </div>
+    </div>
+  </div>
+
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="javascript/script.js"></script>
 </body>
